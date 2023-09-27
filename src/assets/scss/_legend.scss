@@ -1,0 +1,35 @@
+// legend
+.legend-container {
+    max-width: 430px;
+    margin: 0 auto 20px auto;
+    @media screen and (min-width:$smallBreakpoint){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 300px;
+    }
+    @media screen and (min-width:$mediumBreakpoint){
+        display: block;
+    }
+}
+#outerChartLegend, #innerChartLegend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#outerChartLegend {
+    @media screen and (min-width:$smallBreakpoint){
+        display: block;
+    } 
+}
+#innerChartLegend {
+    margin: 20px auto;
+    @media screen and (min-width:$smallBreakpoint){
+        margin: unset;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    @media screen and (min-width:$mediumBreakpoint){
+        margin-top: 30px;
+    }
+}

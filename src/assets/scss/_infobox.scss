@@ -1,0 +1,39 @@
+// infobox
+.infobox {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid $gray-blue;
+    text-align: center;
+    color: $white;
+    @media screen and (min-width:$largeBreakpoint) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        display: block;
+        border-radius: 3px;
+        padding: 2px 0;
+        font-size: 14px;
+        width: 155px;
+        margin: 0 auto 10px auto;
+        @media screen and (min-width:$largeBreakpoint) {
+            margin: 0 auto;
+        }
+    }
+    .noData {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .maleIcon {
+        font-size: 18px;
+        color: $blue;
+    }
+    .femaleIcon {
+        font-size: 18px;
+        color: $pink;
+    }
+    .equals, .plus {
+        margin: 0 5px;
+    }
+}

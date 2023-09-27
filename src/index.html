@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Italian Population Chart 2022</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header-title">Nested Doughnut Chart</h1>
+            <p class="header-description">interactive doughnut chart created with Chart.js, a free JavaScript library for making HTML-based charts.</p>
+        </header>
+        <div class="main">
+            <div class="chart-container">
+                <div class="year">year: 2022</div>
+                <h3 class="chart-title">Italian Population by Age and Gender</h3>
+                <div class="legend-container">
+                    <ul id="outerChartLegend"></ul>  
+                    <ul id="innerChartLegend"></ul>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+                <div class="infobox">
+                    <div class="noData">There is no data</div>
+                    <div class="infobox-item malesAnFemales">
+                        <span>
+                            <i class="fa fa-person-dress femaleIcon"></i>
+                            <span class="plus">+</span> 
+                            <i class="fa fa-person maleIcon"></i></span>
+                        </span>
+                        <span class="equals">=</span> 
+                        <span class="value"></span>
+                    </div>
+                    <div class="infobox-item females">
+                        <span>
+                            <i class="fa fa-person-dress femaleIcon"></i>
+                        </span>
+                        <span class="equals">=</span> 
+                        <span class="value"></span>
+                    </div>
+                    <div class="infobox-item males">
+                        <span>
+                            <i class="fa fa-person maleIcon"></i></span>
+                        </span>
+                        <span class="equals">=</span> 
+                        <span class="value"></span>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </body>
+</html>

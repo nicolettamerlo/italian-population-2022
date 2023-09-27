@@ -1,0 +1,12 @@
+// hedaer
+.header {
+    margin: 70px auto 30px auto;
+    text-align: center;
+    color: $black;
+    &-title {
+        font-size: 25px;
+    }
+    &-description {
+        font-size: 18px;
+    }
+}

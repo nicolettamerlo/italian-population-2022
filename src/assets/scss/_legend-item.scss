@@ -1,0 +1,61 @@
+// legend item
+@mixin legend-item {
+    display: flex;
+    align-items: center;
+    margin: 8px;   
+    @media screen and (min-width:$mediumBreakpoint){
+        margin: 12px 8px;   
+    }
+}
+.legend-item-outer {
+    @include legend-item;
+}
+.legend-item-inner {
+    @include legend-item;
+    margin-top: 6px;
+    @media screen and (min-width:$mediumBreakpoint){
+        margin-top: 0px;
+    }
+}
+.legend-item-label {
+    color: $white;
+    font-size: 15px;
+    padding:1px 3px 1px 4px;
+    margin: 0;
+}
+.legend-item-square {
+    border: 1px solid $white;  
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.legend-item-icon {
+    font-size: 16px;
+    padding-top: 4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 1px solid $white; 
+}
+/* hover effects */
+.legend-item-square:hover {
+    background-color: var(--hoverColor, red) !important;
+    border-color: var(--hoverColor, red) !important;
+}
+.legend-item-square:hover + .legend-item-label {
+    color: var(--hoverColor, red) !important;
+   font-weight: 500;
+}
+.legend-item-icon:hover {
+    color:var(--hoverColor, red) !important;
+    border-color:var(--hoverColor, red) !important;
+}
+.legend-item-icon:hover + .legend-item-label {
+    color:var(--hoverColor, red) !important;
+    font-weight: 500;
+}
+.legend-item-icon:active, .legend-item-square:active {
+    transform: translate(1px, 1px);
+}
